@@ -1,0 +1,54 @@
+﻿@using AileHekimligiProje.Models.EntityFramework
+@using AileHekimligiProje.Controllers
+@model List<Veriler>
+
+@{
+    ViewBag.Title = "_fordetail";
+
+}
+
+<head>
+    <title>Firebase</title>
+
+
+
+    <script src="~/Content/Script/app.js"></script>
+    <script src="~/Content/Script/canvasjs.min.js"></script>
+    <script src="~/Content/Script/canvasjs.react.js"></script>
+    <script src="~/Content/Script/jquery.canvasjs.min.js"></script>
+</head>
+
+
+
+
+
+
+<div class="list-group" style="overflow:scroll; height:500px;">
+
+    @*@{
+        IEnumerable<Veriler> veriler = ViewData["_fordetail"] as IEnumerable<Veriler>;
+    }
+
+    @foreach (var veri in Model)
+    {
+
+        <div class="list-group" style="background-color: LightSteelBlue; padding:3px;">
+            <a href="#" class="list-group-item">Zaman: @veri.Zaman</a>
+            <a href="#" class="list-group-item">Sıcaklık Miktarı: @veri.SicaklikSeviyesi °C</a>
+            <a href="#" class="list-group-item">Nem Miktarı: @veri.NemSeviyesi g/m3 </a>
+        </div>
+
+
+
+    }*@
+
+    <p id="temp"></p>
+    <p id="time"></p>
+    <p id="humidity"></p>
+
+
+   
+
+
+
+</div>

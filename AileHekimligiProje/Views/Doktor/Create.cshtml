@@ -1,0 +1,128 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model AileHekimligiProje.Models.EntityFramework.Hasta
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link rel="shortcut icon" href="~/Content/Images/doctor.ico">
+    <meta name="viewport" content="width=device-width" />
+    <title>Yeni Hasta Kayıt</title>
+
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+    </style>
+</head>
+<body style="background-color:  LightSteelBlue;">
+    <div style=" border-bottom: 4px solid #8bc4f9; background-color: #d2e5f9; height: 66px;">
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Listele/"><i class="fas fa-home"></i>Ana Sayfa</a>
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Create/"><i class="fas fa-user-plus"></i> Yeni Hasta Kayıt</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Settings/"><i class="fas fa-cogs"></i> Randevu Bilgilerinizi Düzenleyin </a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; float: right; " href="/Hasta/LogOut/"><i class="fas fa-sign-out-alt"></i>Çıkış Yap</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/dailydate/"><i class="fas fa-bell"></i>Randevular</a>
+    </div>
+
+    <form method="post" style="width: 50%;margin: auto;">
+        <div class="w3-container" style="margin:90px;">
+
+
+            @using (Html.BeginForm("Create", "Doktor", FormMethod.Post))
+            {
+                <div class="form-group">
+
+                    <div class="editor-label">
+                        <label for="AdSoyad"><b>Ad Soyad </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.AdSoyad, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="TC"><b>TC Kimlik Numarası </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.TC, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="Yas"><b>Yaş </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.Yas, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="Cinsiyet"><b>Cinsiyet </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.Cinsiyet, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="AnneAdi"><b>AnneAdi </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.AnneAdi, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="BabaAdi"><b>Baba Adı</b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.BabaAdi, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="SeriNo"><b>Seri No</b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.SeriNo, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="CalismaDurumu"><b>Çalışma Durumu </b></label>
+                    </div>
+                    @Html.TextAreaFor(m => m.CalismaDurumu, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="IsyeriBilgileri"><b>İş Yeri Bilgileri </b></label>
+                    </div>
+                    @Html.TextAreaFor(m => m.IsYeriBilgileri, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="Sigara"><b>Sigara Kullanımı</b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.Sigara, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="Alkol"><b>Alkol Kullanımı </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.Alkol, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="KullanilanIlaclar"><b>Kullanılan İlaçlar</b></label>
+                    </div>
+                    @Html.TextAreaFor(m => m.KullanilanIlaclar, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="Teshis"><b>Teşhis </b></label>
+                    </div>
+                    @Html.TextAreaFor(m => m.Teshis, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="YenmiIlac"><b>Yeni İlaçlar </b></label>
+                    </div>
+                    @Html.TextAreaFor(m => m.YenmiIlac, new { @class = "form-control" })
+                </div>
+
+                @Html.HiddenFor(m => m.Id)
+                <button type="submit" class="btn btn-light" style=" float: right; width: 140px; border-radius: 11px;">Kaydet</button>
+            }
+        </div>
+
+    </form><script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

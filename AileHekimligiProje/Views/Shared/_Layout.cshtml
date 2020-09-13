@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html lang="">
+<head>
+    <title>Aile Hekimliği Sistemi</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="~/Content/Images/doctor.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="~/Content/Css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link href="~/Content/Css/fotiler.css" rel="stylesheet" />
+    <style>
+        .yazi:hover{
+            font-size:20px;
+            color:white;
+        }
+
+        .yazi{
+            font-size:20px;
+            color:black;
+        }
+        h1{
+            font-size:30px;
+        }
+        body {
+            background-image: url('Content/Images/cool-background.png');
+        }
+    </style>
+</head>
+@Html.Partial("_Header")
+<body id="top">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay padtop" style="background-image:url('Content/Images/about-bg.jpg');">
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <div id="pageintro" class="hoc clear">
+            <!-- ################################################################################################ -->
+            <article>
+                <h3 class="heading">Aile Hekimliği Sistemi</h3>
+                <p>Hoş Geldiniz..</p>
+            </article>
+            <!-- ################################################################################################ -->
+        </div>
+        <!-- ################################################################################################ -->
+    </div>
+
+    <div class="container" style="background-color:transparent; width:100%; max-width:100%;">
+        <div class="container" style="background-color: rgb(118, 190, 197); opacity: 0.8; border: 2px medium #01546B; max-width: 100%;">
+    
+            <h1 style="color: white; text-align:center;">Aile Hekimliği Sistemi Nedir?</h1>  <br />
+            <p class="yazi" style="padding:30px;">Aile Hekimliği Sistemi hastaların daha iyi bir hizmet alabilmeleri adına ayağa kaldırılmış bir sistemdir. Kurulan bu sistem sayesinde Aile Hekimleri hastalarının çalıştıkları ortamlarda ne gibi faktörlere maruz kaldıklarını görebiliyorlar ve hastalıkları adına daha doğru bir teşhis koyabiliyorlardır. Daha iyi bir hizmet verebilmek adına oluşturulmuş bu sistem sayesinde aile hekimleri sadece şu anlık hastalık üzerine değil, maruz kaldıkları faktörlerden yola çıkarak ne gibi hastalıkların risklerini taşıdıklarını da söylebileceklerdir. </p>
+        </div>
+
+        <div class="container-lg">
+            <img class="dude" src="~/Content/Images/ras.png" style="width:280px; height:auto; border:3px groove white; padding:20px; margin:40px" alt="Raspberry Pi" title="Raspberry Pi"/>
+            <img class="dude" src="~/Content/Images/socket.jpg" style="width:280px; height:auto; border:3px groove white; padding:20px; margin:40px" alt="Soket Programlama/Python" title="Python ile Soket Programlama" />
+            <img class="dude" src="~/Content/Images/sqlserver1.png" style="width:280px; height:auto; border:3px groove white; padding:20px; margin:40px" alt="MSSQL Veri Tabanı" title="MSSQL Veri Tabanı" />
+
+            <img class="dude" src="~/Content/Images/firebase.jpg" style="width:280px; height:auto; border:3px groove white; padding:20px; margin:40px" alt="Firebase" title="Firebase" />
+            <img class="dude" src="~/Content/Images/net.png" style="width:280px; height:auto; border:3px groove white; padding:20px; margin:40px" alt="Asp.net MVC" title="Asp.net MVC" />
+            <img class="dude" src="~/Content/Images/python.png" style="width:280px; height:auto; border:3px groove white; padding:20px; margin:40px" alt="Python" title="Python" />
+         </div>
+        @Html.Partial("_Slider")
+    </div>
+
+    
+    <!-- End Top Background Image Wrapper -->
+    <!-- ################################################################################################ -->
+    <!-- #############################################################################
+
+    <div class="container">
+        @RenderBody()
+
+       
+    </div>
+
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    @Html.Partial("_Footer")
+    <a id="backtotop" href="#top" style="background-color:bisque"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+
+    <script src="~/Content/Script/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/popper-utils.min.js"></script>
+</body>
+</html>

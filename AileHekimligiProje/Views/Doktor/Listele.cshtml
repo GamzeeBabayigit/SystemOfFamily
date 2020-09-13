@@ -1,0 +1,86 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model List<Hasta>
+
+@{
+    ViewBag.Title = "Listele";
+
+}
+<head>
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+            .btn:hover {
+                background-color: #87cefa;
+            }
+
+       
+    </style>
+</head>
+    
+
+<body  style="background-color:  LightSteelBlue; overflow:scroll;">
+    <div style=" border-bottom: 4px solid #8bc4f9; background-color: #d2e5f9; height: 66px;">
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Listele/"><i class="fas fa-home"></i>Ana Sayfa</a>
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Create/"><i class="fas fa-user-plus"></i> Yeni Hasta Kayıt</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Settings/"><i class="fas fa-cogs"></i> Randevu Bilgilerinizi Düzenleyin </a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; float: right; " href="/Hasta/LogOut/"><i class="fas fa-sign-out-alt"></i>Çıkış Yap</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/dailydate/"><i class="fas fa-bell"></i>Randevular</a>
+    </div>
+    <div class="w3-container" style="">
+
+       
+        <table class="table table-striped" style="">
+            <thead>
+                <tr style="border:groove;">
+                    <th>Ad Soyad    </th>
+                    <th>Cinsiyet    </th>
+                    <th>TC No      </th>
+                    <th>Yaş      </th>
+                    <th>Anne Adı      </th>
+                    <th>Baba Adı      </th>
+                    <th>Seri No      </th>
+                    <th>Çalışma Durumu      </th>
+                    <th>İş Yeri Bilgileri      </th>
+                    <th>Sigara Kullanımı      </th>
+                    <th>Alkol Kullanımı      </th>
+                    <th>Kullanılan İlaçlar      </th>
+                </tr>
+            </thead>
+            <tbody style="background-color: aliceblue; ">
+                @foreach (var hasta in Model)
+                {
+                    
+                    <tr>
+                        <td>@hasta.AdSoyad</td>
+                        <td>@hasta.Cinsiyet</td>
+                        <td>@hasta.TC</td>
+                        <td>@hasta.Yas</td>
+                        <td>@hasta.AnneAdi</td>
+                        <td>@hasta.BabaAdi</td>
+                        <td>@hasta.SeriNo</td>
+                        <td>@hasta.CalismaDurumu</td>
+                        <td>@hasta.IsYeriBilgileri</td>
+                        <td>@hasta.Sigara</td>
+                        <td>@hasta.Alkol</td>
+                        <td>@hasta.KullanilanIlaclar</td>
+
+                        <td><a class="btn btn-light" href="/Doktor/Guncelle/@hasta.Id">Güncelle</a></td>
+                        <td><a class="btn btn-light" href="/Doktor/Sil/@hasta.Id">Sil</a></td>
+                        <td><a class="btn btn-light" href="/Doktor/Detail/@hasta.Id">Detay</a></td>
+
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+       
+        <script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+    </div>
+</body>

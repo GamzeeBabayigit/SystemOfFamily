@@ -1,0 +1,79 @@
+﻿@using AileHekimligiProje.Models.EntityFramework
+@using AileHekimligiProje.Controllers
+@model IEnumerable<AileHekimligiProje.Models.EntityFramework.Randevular>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Randevu Bilgilerini Düzenleme</title>
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+    <script src="~/Scripts/js/jquery-1.12.4.js"></script>
+    <script src="~/Scripts/js/jquery-ui.js"></script>
+    <link href="~/Scripts/js/jquery-ui.css" rel="stylesheet" />
+
+    <link href="~/Scripts/js/datepicker.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/js/datepicker.min.js"></script>
+    <!-- Include English language -->
+
+    <script src="~/Scripts/js/datepicker.en.js"></script>
+    <style>
+        .ortala:hover {
+            transform: translateX(-3px);
+            opacity: 0.9;
+            box-shadow: 0 0 0 10px  #8BC4F9;
+            transition: .5s ease;
+        }
+    </style>
+</head>
+<body style="background-color:  LightSteelBlue;">
+    <div style=" border-bottom: 4px solid #8bc4f9; background-color: #d2e5f9; height: 66px;">
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Listele/"><i class="fas fa-home"></i>Ana Sayfa</a>
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Create/"><i class="fas fa-user-plus"></i> Yeni Hasta Kayıt</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Settings/"><i class="fas fa-cogs"></i> Randevu Bilgilerinizi Düzenleyin </a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; float: right; " href="/Hasta/LogOut/"><i class="fas fa-sign-out-alt"></i>Çıkış Yap</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/dailydate/"><i class="fas fa-bell"></i>Randevular</a>
+    </div>
+    <div class="container ortala" style=" background-color: #F8F8FF; width: 1000px; height: 450px; margin: auto; margin-top: 80px; border: 2px solid #8BC4F9; overflow: scroll; border-radius: 10px; ">
+        <h5 class="text-center text-info" style="margin-top: 25px;"><i class="far fa-calendar-plus"></i>Hoş Geldiniz Sayın @Session["username"].ToString()</h5>
+        
+        <hr />
+        <div style="margin:10px; ">
+            <a class="btn btn-light" style="padding: 10px; margin: 10px; border: 2px solid #8BC4F9;" href="/Doktor/fordatetime/"><i class="fas fa-plus-circle"></i>Yeni Randevu Ekle</a>
+            <hr />
+            <div class="container-fluid ">
+
+                <table>
+                    <tbody>
+                        @foreach (var randevu in Model)
+                        {
+                            var rande = Session["Id"].ToString();
+                            if (randevu.DoktorId == int.Parse(rande)) { 
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => randevu.RandevuSaati)</td>
+
+                                <td><a class="btn btn-light" style="padding: 10px; margin: 10px; border: 2px solid #8BC4F9;" href="/Doktor/Temizle/@randevu.Id"><i class="fas fa-trash-alt"></i></a></td>
+
+                            </tr>}
+                        }
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+</body>
+</html>

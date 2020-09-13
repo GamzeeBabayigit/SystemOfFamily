@@ -1,0 +1,80 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model List<Randevular>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Randevu Al</title>
+
+
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        b {
+            color: ActiveBorder;
+            font-family: 'Arial Nova';
+            font-weight: 400;
+        }
+    </style>
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+
+        th, td {
+            text-align: -webkit-center;
+            padding: 8px;
+        }
+    </style>
+
+</head>
+<body style="background-color: #b0c4de">
+
+    <div class="container">
+
+
+        <div>
+          
+                <div class="form-group">
+
+
+                    <div style="margin-top:50px;">
+
+                        <table class="table table-striped" style="border: 3px solid #70CAFA;">
+                            <thead>
+                                <tr style="border:groove;"></tr>
+
+                            </thead>
+                            <tbody style="background-color: #E0D8EC; ">
+                                @foreach (var randevu in Model)
+                        {           
+                                    <tr>
+                                        <td>@randevu.RandevuSaati</td>
+                                        <td><a class="btn btn-light" href="/Hasta/randevual/@randevu.Id">Randevu Ara</a></td>
+                                    </tr>
+                        }
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+           
+
+            </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model AileHekimligiProje.Models.EntityFramework.Doktor
+@{
+    Layout = null;
+    ViewBag.Title = "Profil";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Profil</title>
+</head>
+<body style="background-color: #b0c4de">
+
+    <h2 class="text-center text-info">Hoş Geldiniz Sayın  @Session["username"].ToString()</h2>
+
+    <form method="post">
+        <div class="w3-container" style="margin:90px;">
+
+
+            @using (Html.BeginForm("Profil", "Doktor", FormMethod.Post))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(m => m.AdSoyad)
+                    @Html.TextBoxFor(m => m.AdSoyad, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.TC)
+                    @Html.TextBoxFor(m => m.TC, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.Sifre)
+                    @Html.TextBoxFor(m => m.Sifre, new { @class = "form-control" })
+
+                 </div>
+                 @Html.HiddenFor(m => m.Id)
+                <button type="submit" class="btn btn-success">Kaydet</button>
+            }
+         </div>
+     </form>
+                    <div>
+
+
+
+                    </div>
+                    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+                    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+                    <link href="~/Content/bootstrap-reboot.css" rel="stylesheet" />
+                    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+                    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+                    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    </body>
+</html>

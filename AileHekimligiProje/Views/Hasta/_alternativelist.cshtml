@@ -1,0 +1,59 @@
+﻿@using AileHekimligiProje.Models.EntityFramework
+@using AileHekimligiProje.Controllers
+@model List<Doktor>
+
+@{
+    ViewBag.Title = "Randevu Alma";
+
+}
+
+
+<head>
+    <title></title>
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+    </style>
+</head>
+
+
+<body style="background-color:  LightSteelBlue;">
+    <div>
+       
+        <div>
+            <table class="table table-striped">
+                <thead>
+                    <tr style="border:groove;">
+                        <th>Şehir Adı </th>
+                        <th>İlçe Adı    </th>
+                        <th>Hastane Adı     </th>
+                        <th>Doktor Adı</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color:aliceblue;">
+                    @foreach (var hasta in Model)
+                    {
+                        <tr>
+                            <td>@hasta.SehirAdi</td>
+                            <td>@hasta.IlceAdi</td>
+                            <td>@hasta.HastaneAdi</td>
+                            <td>@hasta.AdSoyad</td>
+                            <td><a class="btn btn-light" href="/Hasta/randevuislem/@hasta.Id">Randevu Ara</a></td>
+
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+</body>
+

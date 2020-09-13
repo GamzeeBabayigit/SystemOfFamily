@@ -1,0 +1,138 @@
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll.config
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.pdb
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Web.Infrastructure.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.xml
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.csprojResolveAssemblyReference.cache
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.dll
+c:\users\hp\documents\visual studio 2013\Projects\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.pdb
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll.config
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.pdb
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Web.Infrastructure.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.xml
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.dll
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.pdb
+D:\yedek aile hekimligi\güncel 5\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll.config
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.pdb
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.pdb
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Json.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Json.pdb
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.SqlServer.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\FireSharp.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Extensions.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Formatting.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Primitives.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.WebHost.dll
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.SqlServer.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Extensions.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Formatting.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Primitives.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.WebHost.xml
+C:\Users\Hp\Downloads\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.csproj.App.config
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll.config
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\AileHekimligiProje.pdb
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.SqlServer.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\FireSharp.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Json.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Extensions.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Formatting.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Primitives.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.WebHost.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\EntityFramework.SqlServer.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Json.pdb
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\Newtonsoft.Json.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Extensions.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Formatting.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Net.Http.Primitives.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Helpers.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Http.WebHost.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Mvc.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.Razor.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\bin\System.Web.WebPages.Razor.xml
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.csproj.App.config
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.dll
+C:\Users\Hp\Desktop\Kastamonu Üniversitesi Bitirme Projesi\AileHekimligiProje\AileHekimligiProje\obj\Debug\AileHekimligiProje.pdb

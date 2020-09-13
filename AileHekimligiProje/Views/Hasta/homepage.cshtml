@@ -1,0 +1,177 @@
+﻿@using AileHekimligiProje.Models.EntityFramework
+@model List<Doktor>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+    <link rel="shortcut icon" href="~/Content/Images/doctor.ico">
+    <meta name="viewport" content="width=device-width" />
+    <title>Ana Sayfa</title>
+    <script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+    <script src="~/Scripts/js/jquery-1.12.4.js"></script>
+    <script src="~/Scripts/js/jquery-ui.js"></script>
+    <link href="~/Scripts/js/jquery-ui.css" rel="stylesheet" />
+
+    <link href="~/Scripts/js/datepicker.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/js/datepicker.min.js"></script>
+    <!-- Include English language -->
+
+    <script src="~/Scripts/js/datepicker.en.js"></script>
+
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+    </style>
+
+</head>
+<body style="background-color: #b0c4de">
+    <div class="row">
+        <div class="col-md-6" style="padding-left: 170px;">
+            <h3 class="text-center text-info"><i class="fas fa-user-injured"></i> Hoş Geldiniz Sayın @Session["username"].ToString()</h3>
+        </div>
+
+        <div class="col-md-6" style="float: right; padding-left: 40%;">
+            <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 14px; " href="/Hasta/LogOut/"><i class="fas fa-sign-out-alt"></i>Çıkış Yap</a>
+
+        </div>
+
+        <hr />
+    </div>
+   
+    <div class="container" style="background-color: LightSteelBlue;">
+        @Html.Partial("Search")
+        <div style="padding-top:29px;">
+            <div>
+                @Html.Action("_alternativelist", @Model)
+            </div>
+        </div>
+
+        @*<div class="row">
+                 <div class="col-12 ">
+
+
+                     @using (Html.BeginForm())
+                     {
+                         <div class=".form-horizontal">
+                             <div class="form-group">
+                                 <label class="col-md control-label" style="font-style:italic;"> Şehir Seçiniz.. </label>
+                                 <div class="col-md-10">
+                                     @Html.DropDownListFor(m => m.SehirAdi, (List<SelectListItem>)ViewBag.dgr, new { @class = "form-control" })
+
+                                 </div>
+                             </div>
+
+                             <div class="form-group">
+                                 <label class="col-md control-label" style="font-style:italic;"> İlçe Seçiniz.. </label>
+                                 <div class="col-md-10">
+                                     @Html.DropDownListFor(m => m.IlceAdi, (List<SelectListItem>)ViewBag.dgr2, new { @class = "form-control" })
+
+                                 </div>
+                             </div>
+
+                             <div class="form-group">
+                                 <label class="col-md" style="font-style:italic;"> Hastane Seçiniz.. </label>
+                                 <div class="col-md-10">
+                                     @Html.DropDownListFor(m => m.HastaneAdi, (List<SelectListItem>)ViewBag.dgr3, new { @class = "form-control" })
+
+                                 </div>
+                             </div>
+
+                             <div class="form-group">
+                                 <label class="col-md" style="font-style:italic;"> Doktor Seçiniz.. </label>
+                                 <div class="col-md-10">
+                                     @Html.DropDownListFor(m => m.DoktorId, (List<SelectListItem>)ViewBag.dgr4, new { @class = "form-control" })
+
+                                 </div>
+                             </div>
+                             <hr />
+                             <div class="form-group">
+                                 <label class="col-md" style="font-style:italic;"> Randevu Seçiniz.. </label>
+                                 <div class="col-md-10">
+
+
+                                     <input type="datetime-local" name="RandevuSaati" class="form-control" required />
+                                     <script>
+                                         // Create start date
+                                         var start = new Date(),
+                                             prevDay,
+                                             startHours = 9;
+
+                                         // 09:00 AM
+                                         start.setHours(9);
+                                         start.setMinutes(0);
+
+                                         // If today is Saturday or Sunday set 10:00 AM
+                                         if ([6, 0].indexOf(start.getDay()) != -1) {
+                                             start.setHours(10);
+                                             startHours = 10
+                                         }
+
+                                         $('#timepicker-actions-exmpl').datepicker({
+                                             timepicker: true,
+                                             language: 'en',
+                                             startDate: start,
+                                             minHours: startHours,
+                                             maxHours: 18,
+                                             onSelect: function (fd, d, picker) {
+                                                 // Do nothing if selection was cleared
+                                                 if (!d) return;
+
+                                                 var day = d.getDay();
+
+                                                 // Trigger only if date is changed
+                                                 if (prevDay != undefined && prevDay == day) return;
+                                                 prevDay = day;
+
+                                                 // If chosen day is Saturday or Sunday when set
+                                                 // hour value for weekends, else restore defaults
+                                                 if (day == 6 || day == 0) {
+                                                     picker.update({
+                                                         minHours: 10,
+                                                         maxHours: 16
+                                                     })
+                                                 } else {
+                                                     picker.update({
+                                                         minHours: 9,
+                                                         maxHours: 18
+                                                     })
+                                                 }
+                                             }
+                                         })
+                                     </script>
+                                 </div>
+                            </div>
+                         </div>
+                         @Html.HiddenFor(m => m.RandevuId)
+                         <button type="submit" style="margin:15px;" class="btn btn-success">Randevu Ara</button>
+
+                     }
+
+                 </div>
+
+            </div>*@
+
+
+
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,16 @@
+﻿@using (Html.BeginForm("homepage","Hasta",FormMethod.Get))
+{
+    <div class="well">
+        <p style="color:ActiveBorder;">Şehir, İlçe, Hastane Adı ya da Doktor Adına Göre Listeleme yapabilirsiniz... </p>
+        <div class="input-group" style=" border-radius: 10px;">
+            @Html.TextBox("q", null, new { @class="form-control"})
+            <span class="input-group-btn" style="margin-left:25px;">
+                <button class="btn btn-default " type="submit" style="background-color: ActiveBorder; border-radius: 7px;">
+                    <span class="">Listele</span>
+                </button>
+            </span>
+
+        </div>
+
+    </div>
+}

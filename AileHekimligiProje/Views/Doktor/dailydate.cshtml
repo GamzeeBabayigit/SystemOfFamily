@@ -1,0 +1,68 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model List<Randevular>
+
+@{
+    ViewBag.Title = "dailydate";
+
+}
+<head>
+    <title>Randevular</title>
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+    </style>
+</head>
+
+
+<body class=" " style="background-color:  LightSteelBlue; overflow:scroll;">
+    <div style=" border-bottom: 4px solid #8bc4f9; background-color: #d2e5f9; height: 66px;">
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Listele/"><i class="fas fa-home"></i>Ana Sayfa</a>
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Create/"><i class="fas fa-user-plus"></i> Yeni Hasta Kayıt</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Settings/"><i class="fas fa-cogs"></i> Randevu Bilgilerinizi Düzenleyin </a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; float: right; " href="/Hasta/LogOut/"><i class="fas fa-sign-out-alt"></i>Çıkış Yap</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/dailydate/"><i class="fas fa-bell"></i>Randevular</a>
+    </div>
+    <div class="w3-container">
+
+     
+        <table class="table table-striped" style="">
+            <thead>
+                <tr style="border:groove;">
+                    <th>Hasta Ad Soyad    </th>
+                    <th>Randevu Saati    </th>
+                    
+                </tr>
+            </thead>
+           
+            <tbody style="background-color: aliceblue; ">
+                @foreach (var hasta in Model)
+                {
+                    var rande =Session["Id"].ToString();
+                    if (hasta.DoktorId == int.Parse(rande) && hasta.RandevuDurum==1) { 
+                    <tr>
+                        <td>@hasta.HastaAdi</td>
+                        <td>@hasta.RandevuSaati</td>
+                        
+
+                        <td><a class="btn btn-light" href="/Doktor/SilR/@hasta.Id"><i class="fas fa-trash-alt"></i> Sil</a></td>
+                        <td><a class="btn btn-light" href="/Doktor/Detail/@hasta.HastaId"><i class="fas fa-info-circle"></i> Detay</a></td>
+
+                    </tr>}
+                }
+            </tbody>
+
+        </table>
+
+        <script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+    </div>
+</body>

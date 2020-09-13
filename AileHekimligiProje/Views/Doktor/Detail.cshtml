@@ -1,0 +1,282 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model AileHekimligiProje.Models.EntityFramework.Hasta
+@{
+    ViewBag.Title = "Detail";
+}
+<head>
+
+    <title>Detail</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="~/Content/Script/canvasjs.min.js"></script>
+    <script src="~/Content/Script/canvasjs.react.js"></script>
+    <script src="~/Content/Script/jquery.canvasjs.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
+    <script src="~/Content/Script/app.js"></script>
+
+
+
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+
+
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 130em;
+            margin: auto;
+            padding: -1em;
+        }
+
+        b {
+            color: ActiveBorder;
+            font-family: 'Arial Nova';
+            font-weight: 400;
+        }
+
+
+
+        table {
+            width: 100%;
+            background: #eee;
+            padding: 1em;
+            margin: 1em auto;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            font-size: 1.2em;
+        }
+
+        td {
+            font-weight: bold;
+            border-bottom: 1px solid #fbfbfb;
+            width: 20%;
+            padding: .5em .25em;
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            -webkit-transition: all .75s ease-out;
+            -moz-transition: all .75s ease-out;
+            transition: all .75s ease-out;
+        }
+
+            td:nth-child(2) {
+                width: 40%;
+                color: white;
+                text-shadow: 1px 2px #222;
+                text-align: right;
+                background-image: -webkit-linear-gradient(to left, green, green);
+                background-image: -moz-linear-gradient(to left, green, green);
+                background-image: linear-gradient(to left, green, green);
+                background-position: right top;
+            }
+
+            td:nth-child(3) {
+                width: 40%;
+                color: white;
+                text-shadow: 1px 2px #222;
+                background-image: -webkit-linear-gradient(right, gray, gray);
+                background-image: -moz-linear-gradient(right, yellow, gray);
+                background-image: linear-gradient(right, gray, gray);
+                background-position: left top;
+            }
+    </style>
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        .highcharts-figure, .highcharts-data-table table {
+            min-width: 360px;
+            max-width: 800px;
+            margin: 1em auto;
+        }
+
+        .highcharts-data-table table {
+            font-family: Verdana, sans-serif;
+            border-collapse: collapse;
+            border: 1px solid #EBEBEB;
+            margin: 10px auto;
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .highcharts-data-table caption {
+            padding: 1em 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .highcharts-data-table th {
+            font-weight: 600;
+            padding: 0.5em;
+        }
+
+        .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+            padding: 0.5em;
+        }
+
+        .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        .highcharts-data-table tr:hover {
+            background: #f1f7ff;
+        }
+    </style>
+
+    </script>
+
+</head>
+<div>
+    <div style=" border-bottom: 4px solid #8bc4f9; background-color: #d2e5f9; height: 66px;">
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Listele/"><i class="fas fa-home"></i>Ana Sayfa</a>
+
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Create/"><i class="fas fa-user-plus"></i> Yeni Hasta Kayıt</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/Settings/"><i class="fas fa-cogs"></i> Randevu Bilgilerinizi Düzenleyin </a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; float: right; " href="/Hasta/LogOut/"><i class="fas fa-sign-out-alt"></i>Çıkış Yap</a>
+        <a class="btn btn-light" style="padding: 10px; margin: 10px; border-radius: 10px; " href="/Doktor/dailydate/"><i class="fas fa-bell"></i>Randevular</a>
+    </div>
+    <div class="row" style="background-color: aliceblue; width: 100%; margin: auto; ">
+
+        <div class="col-sm-6" style="background-color: LightSteelBlue; ">
+            <h5>Hasta Bilgileri</h5>
+            <hr />
+
+            <form method="post">
+                <div class="w3-container">
+
+                    @using (Html.BeginForm("Detail", "Doktor", FormMethod.Post))
+                    {
+                        <div class="form-group">
+
+                            <div class="editor-label">
+                                <label for="AdSoyad"><b>Ad Soyad </b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.AdSoyad, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="TC"><b>TC Kimlik Numarası </b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.TC, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="Yas"><b>Yaş </b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.Yas, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="Cinsiyet"><b>Cinsiyet </b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.Cinsiyet, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="AnneAdi"><b>AnneAdi </b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.AnneAdi, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="BabaAdi"><b>Baba Adı</b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.BabaAdi, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="SeriNo"><b>Seri No</b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.SeriNo, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="CalismaDurumu"><b>Çalışma Durumu </b></label>
+                            </div>
+                            @Html.TextAreaFor(m => m.CalismaDurumu, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="IsyeriBilgileri"><b>İş Yeri Bilgileri </b></label>
+                            </div>
+                            @Html.TextAreaFor(m => m.IsYeriBilgileri, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="Sigara"><b>Sigara Kullanımı</b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.Sigara, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="Alkol"><b>Alkol Kullanımı </b></label>
+                            </div>
+                            @Html.TextBoxFor(m => m.Alkol, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="KullanilanIlaclar"><b>Kullanılan İlaçlar</b></label>
+                            </div>
+                            @Html.TextAreaFor(m => m.KullanilanIlaclar, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="Teshis"><b>Teşhis </b></label>
+                            </div>
+                            @Html.TextAreaFor(m => m.Teshis, new { @class = "form-control" })
+
+                            <div class="editor-label">
+                                <label for="YenmiIlac"><b>Yeni İlaçlar </b></label>
+                            </div>
+                            @Html.TextAreaFor(m => m.YenmiIlac, new { @class = "form-control" })
+                        </div>
+
+                        @Html.HiddenFor(m => m.Id)
+                        <button type="submit" class="btn btn-light" style=" margin-top: 8px; border: 4px solid cadetblue; border-radius: 14px; margin-left: 69%; width: 229px; ">Kaydet</button>
+
+                        
+
+                    }
+                </div>
+
+            </form>
+
+
+        </div>
+        <div class="col-sm-6" style="background-color: LightSteelBlue;">
+
+            <h5>Hasta'nın Çalışma Ortamı Verileri</h5>
+            <hr />
+            
+            <div>
+
+                <a class="btn btn-light" style="border: 5px solid cornflowerblue; padding: 10px; margin: 10px; margin-top: 28px; border-radius: 13px; width: 95%; background-color: ghostwhite;" href="/Doktor/graphdetail/"><i class="fas fa-user-plus"></i> Çalışma Ortamı Verileri İçin Tıklayın...</a>
+
+
+
+
+            </div>
+            
+
+            <script src="https://kit.fontawesome.com/712e0b150d.js" crossorigin="anonymous"></script>
+  
+    </div>
+
+</div>

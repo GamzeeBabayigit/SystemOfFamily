@@ -1,0 +1,73 @@
+﻿@model AileHekimligiProje.Models.EntityFramework.Hasta
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<head>
+    <title></title>
+    <link rel="shortcut icon" href="~/Content/Images/doctor.ico">
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        b {
+            color: ActiveBorder;
+            font-family: 'Arial Nova';
+            font-weight: 400;
+        }
+
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+    </style>
+</head>
+
+<body style="background-color: aliceblue;">
+    @*<a class="btn btn-light" style="padding: 10px; margin: 10px; border: 2px solid LightSteelBlue;" href="/Hasta/Create"><i class="fas fa-user-injured"></i>Kayıt Ol</a>*@
+    <div style="background-color: aliceblue; position: relative; margin: auto; ">
+        <div style="background-color: LightSteelBlue; position: relative; margin: auto; text-align: center; width: 350px; height: 450px; border-radius: 10px; margin-top:30px; ">
+
+            @using (Html.BeginForm("Giris", "Hasta", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
+
+                <fieldset>
+                    <legend style="color:aliceblue;">Hoş Geldiniz..</legend>
+                    <hr />
+                    <div class="editor-label">
+                        <label for="TC"><b>TC Numarası </b></label>
+                    </div>
+                    <div>
+                        <input type="text" name="TC" required>
+                    </div>
+                    <div class="editor-label">
+                        <label for="Sifre"><b>Şifre </b></label>
+                    </div>
+                    <div>
+                        <input type="password" name="Sifre" required>
+                    </div>
+
+                    <p>
+                        <input class="btn btn-light" type="submit" value="Giriş Yap" style="background-color: aliceblue; margin-top: 50px; border-radius: 10px; " />
+                    </p>
+
+
+                </fieldset>
+            }
+
+            <p>
+                <a class="btn btn-light" style="margin-top:70px; border: 2px solid LightSteelBlue; border-radius:10px;" href="/Hasta/Create"><i class="fas fa-user-injured"></i>Kayıt Ol</a>
+            </p>
+        </div>
+
+    </div>
+
+
+</body>

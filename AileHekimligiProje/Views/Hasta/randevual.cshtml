@@ -1,0 +1,90 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model AileHekimligiProje.Models.EntityFramework.Randevular
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Randevu Al</title>
+
+
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        b {
+            color: ActiveBorder;
+            font-family: 'Arial Nova';
+            font-weight: 400;
+        }
+    </style>
+    <style>
+        .btn {
+            border: 2px solid #87cefa;
+        }
+
+            .btn:hover {
+                background-color: #87cefa;
+            }
+
+        th, td {
+            text-align: -webkit-center;
+            padding: 8px;
+        }
+    </style>
+
+</head>
+<body style="background-color: #b0c4de">
+
+    <div class="container" style="    border: 2px solid aliceblue;
+    width: 50%;
+    margin-top: 70px;
+    border-radius: 16px;
+    padding: 20px;">
+
+
+        <div>
+            @using (Html.BeginForm("randevual", "Hasta", FormMethod.Post))
+            {
+                <div class="form-group">
+
+                    <div class="editor-label">
+                        <label for="RandevuSaati"><b>Randevu Saati </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.RandevuSaati, new { @class = "form-control" })
+
+                    <div class="editor-label">
+                        <label for="DoktorAdi"><b>Doktor Ad Soyad </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.DoktorAdi, new { @class = "form-control" })
+
+
+                    <div class="editor-label">
+                        <label for="HastaAdi"><b>Ad Soyad:@Session["username"].ToString() </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.HastaAdi, new { @class = "form-control" })
+
+
+                    <div class="editor-label">
+                        <label for="HastaId"><b>Id'niz:@Session["Id"].ToString() </b></label>
+                    </div>
+                    @Html.TextBoxFor(m => m.HastaId, new { @class = "form-control" })
+
+
+                    <button class="btn btn-default " type="submit" style="background-color: ActiveBorder; border-radius: 7px; margin-top: 25px;">
+                        <span class="">Kaydet</span>
+                    </button>
+                </div>
+            }
+
+        </div>
+    </div>
+</body>
+</html>

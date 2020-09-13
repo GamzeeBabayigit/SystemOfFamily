@@ -1,0 +1,78 @@
+﻿@using AileHekimligiProje.Controllers
+@using AileHekimligiProje.Models.EntityFramework
+@model AileHekimligiProje.Models.EntityFramework.Hasta
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Yeni Hasta Kayıt</title>
+    <link href="~/Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:  aliceblue;">
+
+    <form method="post" style="padding-top: 100px;">
+        <div class="container" style=" background-color: lightsteelblue; position: relative; margin: auto; text-align: center; width: 443px; height: 1084px; border-radius: 10px; ">
+
+
+            @using (Html.BeginForm("Create", "Doktor", FormMethod.Post))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(m => m.AdSoyad)
+                    @Html.TextBoxFor(m => m.AdSoyad, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.TC)
+                    @Html.TextBoxFor(m => m.TC, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.Yas)
+                    @Html.TextBoxFor(m => m.Yas, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.Cinsiyet)
+                    @Html.TextBoxFor(m => m.Cinsiyet, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.AnneAdi)
+                    @Html.TextBoxFor(m => m.AnneAdi, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.BabaAdi)
+                    @Html.TextBoxFor(m => m.BabaAdi, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.SeriNo)
+                    @Html.TextBoxFor(m => m.SeriNo, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.CalismaDurumu)
+                    @Html.TextAreaFor(m => m.CalismaDurumu, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.IsYeriBilgileri)
+                    @Html.TextAreaFor(m => m.IsYeriBilgileri, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.Sigara)
+                    @Html.TextBoxFor(m => m.Sigara, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.Alkol)
+                    @Html.TextBoxFor(m => m.Alkol, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.KullanilanIlaclar)
+                    @Html.TextAreaFor(m => m.KullanilanIlaclar, new { @class = "form-control" })
+
+                    @Html.LabelFor(m => m.Sifre)
+                    @Html.TextAreaFor(m => m.Sifre, new { @class = "form-control" })
+
+                </div>
+                @Html.HiddenFor(m => m.Id)
+                <button type="submit" class="btn btn-light">Kaydet</button>
+            }
+        </div>
+       
+
+    </form>
+</body>
+</html>
